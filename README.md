@@ -1,5 +1,7 @@
 # Package Status server
 
+Hosted on [https://reaktor-package-status.herokuapp.com/](https://reaktor-package-status.herokuapp.com/)
+
 ## Configuration
 
 Make sure to create a file called `config.js` and copy the contents from `config.template.js` into it.
@@ -14,3 +16,4 @@ After that just run the application with `npm start dev`, this starts the api se
 npm and node.js 12.0+ is required for this project to work.
 
 By default the parsed status file can be accessed on [http://localhost:8816/status](http://localhost:8816/status)
+The included HTML interface (a React app) can be accessed on [http://localhost:8816](http://localhost:8816) or hosted on [https://reaktor-package-status.herokuapp.com/](https://reaktor-package-status.herokuapp.com/)
