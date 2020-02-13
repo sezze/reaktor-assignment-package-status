@@ -1,0 +1,22 @@
+{
+  "name": "reaktor-assignment-package-status",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "server": "node server",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "object.fromentries": "^2.0.2",
+    "concurrently": "^5.1.0"
+  }
+}
