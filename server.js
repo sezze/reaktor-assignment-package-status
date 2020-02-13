@@ -4,7 +4,7 @@ const path = require('path')
 const pkgParser = require('./pkg-parser')
 const express = require('express')
 const cors = require('cors')
-const { server: { apiPort } } = require('./config')
+const { statusPath, server: { apiPort } } = require('./config')
 
 // App
 const app = express()
@@ -12,7 +12,7 @@ app.use(cors()) // Use cors to allow website to access api server
 
 // /status returns the parsed JSON data
 app.get('/status', async (req, res) => {
-  fs.readFile('status', 'utf8', (err, data) => {
+  fs.readFile(statusPath, 'utf8', (err, data) => {
     if (err) {
       // On error, ie the file can not be read
       res.sendStatus(500)
