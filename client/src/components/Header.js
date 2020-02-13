@@ -12,7 +12,7 @@ function Header () {
           <SubTitle><Logo src={reactorLogo} alt='Reactor' /> pre-assignment</SubTitle>
         </div>
         <div style={{ flexGrow: 1 }} />
-        <a href='https://github.com/sezze' title='Source on GitHub'>
+        <a href='https://github.com/sezze/reaktor-assignment-package-status' title='Source on GitHub'>
           <img width='32' src={githubLogo} alt='Source on GitHub' />
         </a>
       </div>
