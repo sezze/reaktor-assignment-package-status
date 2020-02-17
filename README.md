@@ -2,11 +2,11 @@
 
 Hosted on [https://reaktor-package-status.herokuapp.com/](https://reaktor-package-status.herokuapp.com/)
 
+The server has very few dependencies. The client uses react which itself uses a lot of dependencies but no additional packages are used.
+
 ## Configuration
 
-Make sure to create a file called `config.js` and copy the contents from `config.template.js` into it.
-
-By default the provided status file is read. To use your system's status file make sure to provide the path in config.js.
+The server can be configured `config.js`. The most important option is the status file path, by default the provided status file is used instead of the system's status file.
 
 ## Setup
 
